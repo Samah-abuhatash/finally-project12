@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper Click Effect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+  <style>
+    /* ✅ استبدال body بـ section */
+    #main-section {
+      position: relative;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      background: #eee;
+      font-size: 14px;
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #swiper-container {
+      width: 100%;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      height: 300px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    swiper-slide img {
+      width: 80%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .info-box {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 80%;
+    }
+
+    .course-count {
+      display: none;
+      margin-top: 5px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    .course-count.active {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ✅ استبدال body بـ section -->
+  <section id="main-section">
+    <div id="swiper-container">
+      <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="4"
+        centered-slides="true" space-between="30" grab-cursor="true">
+
+        <swiper-slide onclick="toggleCourseCount(this)">
+          <img src="./assets/images/courses-f/course-feature-1.png" alt="Image 1">
+          <div class="info-box">
+            <h3>Web Development</h3>
+            <p class="course-count">عدد كورس: 5</p>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide onclick="toggleCourseCount(this)">
+          <img src="./assets/images/courses-f/course-feature-2.png" alt="Image 2">
+          <div class="info-box">
+            <h3>Design Fundamentals</h3>
+            <p class="course-count">عدد كورس: 3</p>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide onclick="toggleCourseCount(this)">
+          <img src="./assets/images/courses-f/course-feature-3.png" alt="Image 3">
+          <div class="info-box">
+            <h3>Data Science</h3>
+            <p class="course-count">عدد كورس: 7</p>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide onclick="toggleCourseCount(this)">
+          <img src="./assets/images/courses-f/course-feature-4.png" alt="Image 4">
+          <div class="info-box">
+            <h3>Machine Learning</h3>
+            <p class="course-count">عدد كورس: 4</p>
+          </div>
+        </swiper-slide>
+
+      </swiper-container>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script>
+    function toggleCourseCount(element) {
+      let courseCount = element.querySelector(".course-count");
+      courseCount.classList.toggle("active");
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,2105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    /* مثال على CSS للناف بار sticky */
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      background-color: #fff; /* لون الخلفية */
+    }
+   
+  </style>
+  
+</head>
+<body>
+
+<!-- ========================== Start Top Bar ========================== -->
+<div class="navbar navbar-expand-lg bg-dark py-2">
+    <div class="container d-flex justify-content-between align-items-center">
+        
+        <!-- شعار الموقع (يظهر دائمًا) -->
+        <a class="navbar-brand text-white" href="#">Welcome</a> 
+        
+        <!-- القائمة العلوية (تظهر فقط على الشاشات الكبيرة) -->
+        <div class="d-none d-lg-flex align-items-center">
+            <ul class="navbar-nav d-flex flex-row gap-3">
+                
+                <!-- رقم الهاتف -->
+                <li class="nav-item1 d-flex align-items-center border-end pe-3">
+                    <i class="fa-solid fa-phone text-white"></i>
+                    <a class="nav-link text-white ms-1 p-0" href="tel:+256214203215">+256214203215</a>
+                </li>
+
+                <!-- العنوان -->
+                <li class="nav-item1 d-flex align-items-center border-end pe-3">
+                    <i class="fa-solid fa-location-dot text-white"></i>
+                    <span class="text-white ms-1">258 Helano Street, New York</span>
+                </li>
+
+                <!-- ساعات العمل -->
+                <li class="nav-item1 d-flex align-items-center border-end pe-3">
+                    <i class="fa-regular fa-clock text-white"></i>
+                    <span class="text-white ms-1">Mon - Sat: 8:00 - 15:00</span>
+                </li>
+
+                <!-- تسجيل الدخول -->
+                <li class="nav-item1 d-flex align-items-center border-end pe-3">
+                    <i class="fa-regular fa-user text-white"></i>
+                    <a class="nav-link text-white ms-1 p-0" href="#">Login / Register</a>
+                </li>
+
+                <!-- مواقع التواصل -->
+                <li class="nav-item1 d-flex align-items-center">
+                    <span class="text-white">Follow us:</span>
+                    <i class="fab fa-facebook text-white ms-2"></i>
+                    <i class="fab fa-x-twitter text-white ms-2"></i>
+                    <i class="fab fa-instagram text-white ms-2"></i>
+                    <i class="fab fa-linkedin text-white ms-2"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- ========================== End Top Bar ========================== -->
+
+
+<!-- ========================== Start Navbar  ==========================  -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-white p-3 shadow-sm position-sticky top-0 start-0" data-aos="fade-down">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/images/logo/favicon.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+              aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">HOME</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">ONLINE ACADEMY</a></li>
+              <li><a class="dropdown-item" href="#">DIGITAL EDUCATION</a></li>
+              <li><a class="dropdown-item" href="#">ONLINE COURSE</a></li>
+              <li><a class="dropdown-item" href="#">UNIVERSITY</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">SHOP</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">SHOP</a></li>
+              <li><a class="dropdown-item" href="#">CART</a></li>
+              <li><a class="dropdown-item" href="#">CHECKOUT</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">PAGES</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">INSTRUCTOR</a></li>
+              <li><a class="dropdown-item" href="#">EVENTS</a></li>
+              <li><a class="dropdown-item" href="#">404 ERROR</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">BLOG</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">BLOG</a></li>
+              <li><a class="dropdown-item" href="#">BLOG DETAILS</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="icons-container d-flex align-items-center">
+          <div class="icon-wrapper position-relative">
+            <span class="badge">0</span>
+            <div class="icon-circle"><i class="fas fa-heart"></i></div>
+          </div>
+          <div class="icon-wrapper position-relative">
+            <span class="badge">0</span>
+            <div class="icon-circle"><i class="fas fa-shopping-cart"></i></div>
+          </div>
+        </div>
+        <a href="#" class="btn btn-primary ms-3 rounded-pill">Start Free Trial</a>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+<!-- ========================== End Navbar ========================== -->
+<main>
+  <!-- ============================ [بداية] قسم الهيرو =========================== -->
+
+  <section class="container mt-5">
+    <div class="row flex-column-reverse flex-lg-row align-items-center">
+        <div class="col-lg-6 text-center text-lg-start">
+            <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-4 mb-4 fade-btn">
+                <div class="icon-circle d-flex align-items-center justify-content-center rounded-circle me-2" 
+                    style="width: 35px; height: 35px; background-color: rgb(218,242,240);">
+                    <i class="fas fa-bolt text-success"></i>
+                </div>
+                More Than 25,659+ Students
+            </button>
+
+            <h1 class="fade-text">The World’s Leading Distance Learning Provider</h1>
+            <p class="fade-text">
+                I’m here to help you find the confidence you need to feel amazing in your body! When an
+                unknown printer took a galley of type and scrambled it.
+            </p>
+
+            
+            <div class="d-flex flex-wrap gap-3 mb-3">
+                <div class="d-inline-flex align-items-center">
+                    <i class="fa-solid fa-check-circle fade-btn"></i>
+                    <span class="fade-text ms-1">Experts Advisors</span>
+                </div>
+                <div class="d-inline-flex align-items-center">
+                    <i class="fa-solid fa-check-circle"></i>
+                    <span class="fade-text ms-1">538+ Courses</span>
+                </div>
+            </div>
+
+            
+            <div class="d-flex gap-3 flex-wrap">
+                <a href="#" class="btn student-btn">
+                    Become A Student <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#" class="btn student-btn">
+                    Learn More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <img src="./assets/images/hero/hero-shape-14.png" alt="مثلث"/>
+            <img src="./assets/images/hero/hero-shape-15.png" alt="خط مدور "/>
+
+        </div>
+
+        
+        <div class="col-lg-6 text-center">
+            <img src="./assets/images/hero/hero-men-3.png" alt="Student Image" class="img-fluid"/>
+        </div>
+    </div>
+</section>
+
+  
+<!-- ============================ [نهاية] قسم الهيرو =========================== -->
+    <!-- Explore Section with Button, Header, and Cards -->
+    <section class="explore py-5 d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+          <!-- Button with Icon -->
+          <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-4 mb-3 fade-btn">
+            <div class="icon-circle d-flex align-items-center justify-content-center rounded-circle me-2" 
+                 style="width: 35px; height: 35px; background-color: rgb(218,242,240);">
+              <i class="fas fa-bolt text-success"></i>
+            </div>
+            More About Us
+          </button>
+          <!-- Header Title -->
+          <div class="headr-h1 mb-5">
+            <h1 class="text-center fade-text">Explore Yourself All Over The World</h1>
+          </div>
+          <!-- Card Grid Section -->
+          <div class="row g-4 justify-content-center">
+            <!-- Card 1 -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card text-center border border-1 position-relative" style="padding: 20px;">
+                <!-- Promo Number -->
+                <span class="promo-number">01</span>
+                <!-- Icon Circle -->
+                <div class="icon-cir mx-auto mb-3">
+                  <img src="./assets/images/card/promo-icon-1.png" alt="Icon" class="icon-img">
+                </div>
+                <!-- Card Content -->
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">80+ Online Courses</h5>
+                  <p class="card-text text-muted">
+                    Tempus imperdiet nulla malesuada tesque libero nunc consequat.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card text-center border border-1 position-relative" style="padding: 20px;">
+                <span class="promo-number">02</span>
+                <div class="icon-cir mx-auto mb-3">
+                  <img src="./assets/images/card/promo-icon-2.png" alt="Icon" class="icon-img">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Top Instructors</h5>
+                  <p class="card-text text-muted">
+                    Tempus imperdiet nulla malesuada tesque libero nunc consequat.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card text-center border border-1 position-relative" style="padding: 20px;">
+                <span class="promo-number">03</span>
+                <div class="icon-cir mx-auto mb-3">
+                  <img src="./assets/images/card/promo-icon-3.png" alt="Icon" class="icon-img">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Online Certificates</h5>
+                  <p class="card-text text-muted">
+                    Tempus imperdiet nulla malesuada tesque libero nunc consequat.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card text-center border border-1 position-relative" style="padding: 20px;">
+                <span class="promo-number">04</span>
+                <div class="icon-cir mx-auto mb-3">
+                  <img src="./assets/images/card/promo-icon-4.png" alt="Icon" class="icon-img">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">6000k+ Members</h5>
+                  <p class="card-text text-muted">
+                    Tempus imperdiet nulla malesuada tesque libero nunc consequat.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- end  Explore Section with Button, Header, and Cards -->
+
+       <!-- start section innovative educational -->
+        <section class="innovative">
+       <div class="image-container">
+        <div class="right">
+            <!-- الخلفية موجودة في الحاوية نفسها -->
+        <img src="./assets/images/innovative/about-shape-2.png" alt="Image 1" class="image1">
+        <img src="./assets/images/innovative/about-shape-3.png" alt="Image 2" class="image2">
+        </div>
+        <div>
+            <img src="./assets/images/innovative/about-img-3.png" alt="Image 3" class="image3">
+        </div>
+        <div class="left-sec">
+            <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-4 mb-3 ">
+                <div class="icon-circle d-flex align-items-center justify-content-center rounded-circle me-2" 
+                     >
+                    <i class="fas fa-bolt text-success"></i>
+                </div>
+                About Our Platform
+            </button>
+            <h1 > We are innovative educational institution to the creation of thestudent</h1>
+            <p>    Our team consists of certified IT professionals with expertise in network security, cloud computing, software development, and technical support. With decades of combined experience, we provide strategic IT guidance and technical support tailored to your business needs.</p>
+            <a href="#" class="btn btn-primary rounded-pill d-flex align-items-center justify-content-center" >
+                <span class="fw-bold  fade-text">Browse All Courses</span>
+                <i class="fas fa-arrow-right ms-2  fade-text"></i>
+            </a>
+            
+            
+        </div>
+
+        
+    </div>
+</section><!-- end  section  innovative educational -->
+<!-- ========================== Start Student’s Mentors Section ========================== -->
+<section class="student-mentors">
+  <div class="image-container1">
+      <!-- زر متحرك -->
+      <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-4 mb-3 moving-btn">
+          <div class="icon-circle d-flex align-items-center justify-content-center rounded-circle me-2" 
+               style="width: 35px; height: 35px; background-color: rgb(218,242,240);">
+              <i class="fas fa-bolt text-success"></i>
+          </div>
+          More About Us
+      </button>
+
+      <!-- العنوان -->
+      <h1>50% Offer For Very First 50 Student’s Mentors</h1>
+
+      <!-- أزرار في الأسفل -->
+      <div class="buttons-container">
+          <a href="#" class="btn student-btn">
+              Become A Student <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#" class="btn teacher-btn">
+              Become A Teacher <i class="fas fa-arrow-right"></i>
+          </a>
+      </div>
+  </div>
+</section>
+<!-- ========================== End Student’s Mentors Section ========================== -->
+
+<!--  Start Explore Featured Courses-->
+<section class="py-1 px-1 explore-section">
+  <div class="text-center d-flex flex-column align-items-center">
+      <!-- زر متحرك -->
+      <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-4 mb-3">
+          <div class="icon-circle d-flex align-items-center justify-content-center rounded-circle me-2" 
+               style="width: 35px; height: 35px; background-color: rgb(218,242,240);">
+              <i class="fas fa-bolt text-success"></i>
+          </div>
+          Top Class Courses
+      </button>
+      <!-- العنوان -->
+      <h1 style="color: black; font-size: 2rem; font-weight: bold;">Explore Featured Courses</h1>
+  </div>
+  <div class="d-flex justify-content-center">
+      <ul class="nav nav-pills gap-2" role="tablist">
+          <li class="nav-item" role="presentation">
+              <a class="nav-link active rounded-pill px-4 py-2" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+          </li>
+          <li class="nav-item" role="presentation">
+              <a class="nav-link rounded-pill px-4 py-2" data-bs-toggle="tab" href="#business" role="tab" aria-controls="business" aria-selected="false">Business</a>
+          </li>
+          <li class="nav-item" role="presentation">
+              <a class="nav-link rounded-pill px-4 py-2" data-bs-toggle="tab" href="#menu1" role="tab" aria-controls="menu1" aria-selected="false">Menu 1</a>
+          </li>
+          <li class="nav-item" role="presentation">
+              <a class="nav-link rounded-pill px-4 py-2" data-bs-toggle="tab" href="#menu2" role="tab" aria-controls="menu2" aria-selected="false">Menu 2</a>
+          </li>
+          <li class="nav-item" role="presentation">
+              <a class="nav-link rounded-pill px-4 py-2" data-bs-toggle="tab" href="#menu3" role="tab" aria-controls="menu3" aria-selected="false">Menu 3</a>
+          </li>
+          <li class="nav-item" role="presentation">
+              <a class="nav-link rounded-pill px-4 py-2" data-bs-toggle="tab" href="#menu4" role="tab" aria-controls="menu4" aria-selected="false">Menu 4</a>
+          </li>
+      </ul>
+  </div>
+  <!-- start  Explore Featured Courses-->
+   <div class="container Explore_Featured_Courses">
+    <div class="tab-content">
+      <!-- Home Tab -->
+      <div id="home" class="tab-pane fade show active" role="tabpanel" aria-labelledby="home-tab">
+          <div class="row">
+              <!-- Card 1 -->
+              <div class="col-12 col-md-6 col-lg-4 mb-4">
+                  <div class="card shadow-lg card-custom">
+                      <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-05.jpg" class="card-img-top" alt="Course Image">
+                      <div class="card-body">
+                          <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                              <div class="icon-circle me-2">
+                                  <i class="fas fa-bolt text-success"></i>
+                              </div>
+                              UI/UX Design
+                          </button>
+                          <h5 class="card-title">UI/UX Design Complete Figma UI UX Design Essentials</h5>
+                          <div class="d-flex align-items-center mb-2">
+                              <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                          </div>
+                          <div class="d-flex align-items-center mb-3">
+                              <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                              <div class="ms-2">
+                                  <h6 class="mb-0">Mohuiddin Sumon</h6>
+                                  <small class="text-success">WordPress Developer</small>
+                              </div>
+                          </div>
+                          <div class="d-flex align-items-center mb-3">
+                              <div class="star-rating">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                  <i class="far fa-star"></i>
+                              </div>
+                              <span class="ms-2">(3)</span>
+                          </div>
+                      </div>
+                      <div class="card-footer d-flex justify-content-between align-items-center">
+                          <span class="fw-bold">Free</span>
+                          <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4 mb-4 ">
+                <div class="card shadow-lg card-custom">
+                  <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-03.jpg" class="card-img-top" alt="Course Image">
+                  <div class="card-body">
+                    <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                      <div class="icon-circle me-2">
+                        <i class="fas fa-bolt text-success"></i>
+                      </div>
+                      Web Design
+                    </button>
+                    <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                    <div class="d-flex align-items-center mb-2">
+                      <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                      <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                      <div class="ms-2">
+                        <h6 class="mb-0">Mohuiddin Sumon</h6>
+                        <small class="text-success">WordPress Developer</small>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                      <span class="ms-2">(3)</span>
+                    </div>
+                  </div>
+                  <div class="card-footer d-flex justify-content-between align-items-center">
+                    <span class="fw-bold">Free</span>
+                    <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-lg card-custom">
+                  <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-04.jpg" class="card-img-top" alt="Course Image">
+                  <div class="card-body">
+                    <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                      <div class="icon-circle me-2">
+                        <i class="fas fa-bolt text-success"></i>
+                      </div>
+                      Web Design
+                    </button>
+                    <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                    <div class="d-flex align-items-center mb-2">
+                      <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                      <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                      <div class="ms-2">
+                        <h6 class="mb-0">Mohuiddin Sumon</h6>
+                        <small class="text-success">WordPress Developer</small>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                      <span class="ms-2">(3)</span>
+                    </div>
+                  </div>
+                  <div class="card-footer d-flex justify-content-between align-items-center">
+                    <span class="fw-bold">Free</span>
+                    <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-lg card-custom">
+                  <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-09.jpg" class="card-img-top" alt="Course Image">
+                  <div class="card-body">
+                    <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                      <div class="icon-circle me-2">
+                        <i class="fas fa-bolt text-success"></i>
+                      </div>
+                      Web Design
+                    </button>
+                    <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                    <div class="d-flex align-items-center mb-2">
+                      <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                      <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                      <div class="ms-2">
+                        <h6 class="mb-0">Mohuiddin Sumon</h6>
+                        <small class="text-success">WordPress Developer</small>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                      <span class="ms-2">(3)</span>
+                    </div>
+                  </div>
+                  <div class="card-footer d-flex justify-content-between align-items-center">
+                    <span class="fw-bold">Free</span>
+                    <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-lg card-custom">
+                  <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-10.jpg" class="card-img-top" alt="Course Image">
+                  <div class="card-body">
+                    <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                      <div class="icon-circle me-2">
+                        <i class="fas fa-bolt text-success"></i>
+                      </div>
+                      Web Design
+                    </button>
+                    <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                    <div class="d-flex align-items-center mb-2">
+                      <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                      <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                      <div class="ms-2">
+                        <h6 class="mb-0">Mohuiddin Sumon</h6>
+                        <small class="text-success">WordPress Developer</small>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                      <span class="ms-2">(3)</span>
+                    </div>
+                  </div>
+                  <div class="card-footer d-flex justify-content-between align-items-center">
+                    <span class="fw-bold">Free</span>
+                    <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-lg card-custom">
+                  <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-11.jpg" class="card-img-top" alt="Course Image">
+                  <div class="card-body">
+                    <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                      <div class="icon-circle me-2">
+                        <i class="fas fa-bolt text-success"></i>
+                      </div>
+                      Web Design
+                    </button>
+                    <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                    <div class="d-flex align-items-center mb-2">
+                      <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                      <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                      <div class="ms-2">
+                        <h6 class="mb-0">Mohuiddin Sumon</h6>
+                        <small class="text-success">WordPress Developer</small>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                      <span class="ms-2">(3)</span>
+                    </div>
+                  </div>
+                  <div class="card-footer d-flex justify-content-between align-items-center">
+                    <span class="fw-bold">Free</span>
+                    <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+      </div>
+      <!-- Business Tab -->
+      <div id="business" class="tab-pane fade" role="tabpanel" aria-labelledby="business-tab">
+          <div class="row">
+<div class="col-12 col-md-6 col-lg-4 mb-4">
+                  <div class="card shadow-lg card-custom">
+                    <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-05.jpg" class="card-img-top" alt="Course Image">
+                    <div class="card-body">
+                      <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                        <div class="icon-circle me-2">
+                          <i class="fas fa-bolt text-success"></i>
+                        </div>
+                        Web Design
+                      </button>
+                      <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                      <div class="d-flex align-items-center mb-2">
+                        <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                      </div>
+                      <div class="d-flex align-items-center mb-3">
+                        <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                        <div class="ms-2">
+                          <h6 class="mb-0">Mohuiddin Sumon</h6>
+                          <small class="text-success">WordPress Developer</small>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center mb-3">
+                        <div class="star-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                        <span class="ms-2">(3)</span>
+                      </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                      <span class="fw-bold">Free</span>
+                      <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                  <div class="card shadow-lg card-custom">
+                    <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-03.jpg" class="card-img-top" alt="Course Image">
+                    <div class="card-body">
+                      <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                        <div class="icon-circle me-2">
+                          <i class="fas fa-bolt text-success"></i>
+                        </div>
+                        Web Design
+                      </button>
+                      <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                      <div class="d-flex align-items-center mb-2">
+                        <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                      </div>
+                      <div class="d-flex align-items-center mb-3">
+                        <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                        <div class="ms-2">
+                          <h6 class="mb-0">Mohuiddin Sumon</h6>
+                          <small class="text-success">WordPress Developer</small>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center mb-3">
+                        <div class="star-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                        <span class="ms-2">(3)</span>
+                      </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                      <span class="fw-bold">Free</span>
+                      <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                  <div class="card shadow-lg card-custom">
+                    <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-04.jpg" class="card-img-top" alt="Course Image">
+                    <div class="card-body">
+                      <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                        <div class="icon-circle me-2">
+                          <i class="fas fa-bolt text-success"></i>
+                        </div>
+                        Web Design
+                      </button>
+                      <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                      <div class="d-flex align-items-center mb-2">
+                        <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                      </div>
+                      <div class="d-flex align-items-center mb-3">
+                        <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                        <div class="ms-2">
+                          <h6 class="mb-0">Mohuiddin Sumon</h6>
+                          <small class="text-success">WordPress Developer</small>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center mb-3">
+                        <div class="star-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                        <span class="ms-2">(3)</span>
+                      </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                      <span class="fw-bold">Free</span>
+                      <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                  <div class="card shadow-lg card-custom">
+                    <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-09.jpg" class="card-img-top" alt="Course Image">
+                    <div class="card-body">
+                      <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                        <div class="icon-circle me-2">
+                          <i class="fas fa-bolt text-success"></i>
+                        </div>
+                        Web Design
+                      </button>
+                      <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                      <div class="d-flex align-items-center mb-2">
+                        <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                      </div>
+                      <div class="d-flex align-items-center mb-3">
+                        <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                        <div class="ms-2">
+                          <h6 class="mb-0">Mohuiddin Sumon</h6>
+                          <small class="text-success">WordPress Developer</small>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center mb-3">
+                        <div class="star-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                        <span class="ms-2">(3)</span>
+                      </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                      <span class="fw-bold">Free</span>
+                      <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                  <div class="card shadow-lg card-custom">
+                    <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-10.jpg" class="card-img-top" alt="Course Image">
+                    <div class="card-body">
+                      <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                        <div class="icon-circle me-2">
+                          <i class="fas fa-bolt text-success"></i>
+                        </div>
+                        Web Design
+                      </button>
+                      <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                      <div class="d-flex align-items-center mb-2">
+                        <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                      </div>
+                      <div class="d-flex align-items-center mb-3">
+                        <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                        <div class="ms-2">
+                          <h6 class="mb-0">Mohuiddin Sumon</h6>
+                          <small class="text-success">WordPress Developer</small>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center mb-3">
+                        <div class="star-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                        <span class="ms-2">(3)</span>
+                      </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                      <span class="fw-bold">Free</span>
+                      <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                  <div class="card shadow-lg card-custom">
+                    <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-11.jpg" class="card-img-top" alt="Course Image">
+                    <div class="card-body">
+                      <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                        <div class="icon-circle me-2">
+                          <i class="fas fa-bolt text-success"></i>
+                        </div>
+                        Web Design
+                      </button>
+                      <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                      <div class="d-flex align-items-center mb-2">
+                        <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                      </div>
+                      <div class="d-flex align-items-center mb-3">
+                        <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                        <div class="ms-2">
+                          <h6 class="mb-0">Mohuiddin Sumon</h6>
+                          <small class="text-success">WordPress Developer</small>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center mb-3">
+                        <div class="star-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                        <span class="ms-2">(3)</span>
+                      </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                      <span class="fw-bold">Free</span>
+                      <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+      </div>
+      <!-- Menu Tabs -->
+      <div id="menu1" class="tab-pane fade" role="tabpanel" aria-labelledby="menu1-tab">
+          <div class="row">
+  <div class="col-12 col-md-6 col-lg-4 mb-4">
+                      <div class="card shadow-lg card-custom">
+                        <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-05.jpg" class="card-img-top" alt="Course Image">
+                        <div class="card-body">
+                          <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                            <div class="icon-circle me-2">
+                              <i class="fas fa-bolt text-success"></i>
+                            </div>
+                            Web Design
+                          </button>
+                          <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                          <div class="d-flex align-items-center mb-2">
+                            <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                          </div>
+                          <div class="d-flex align-items-center mb-3">
+                            <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                            <div class="ms-2">
+                              <h6 class="mb-0">Mohuiddin Sumon</h6>
+                              <small class="text-success">WordPress Developer</small>
+                            </div>
+                          </div>
+                          <div class="d-flex align-items-center mb-3">
+                            <div class="star-rating">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="far fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                            <span class="ms-2">(3)</span>
+                          </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                          <span class="fw-bold">Free</span>
+                          <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                      <div class="card shadow-lg card-custom">
+                        <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-03.jpg" class="card-img-top" alt="Course Image">
+                        <div class="card-body">
+                          <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                            <div class="icon-circle me-2">
+                              <i class="fas fa-bolt text-success"></i>
+                            </div>
+                            Web Design
+                          </button>
+                          <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                          <div class="d-flex align-items-center mb-2">
+                            <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                          </div>
+                          <div class="d-flex align-items-center mb-3">
+                            <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                            <div class="ms-2">
+                              <h6 class="mb-0">Mohuiddin Sumon</h6>
+                              <small class="text-success">WordPress Developer</small>
+                            </div>
+                          </div>
+                          <div class="d-flex align-items-center mb-3">
+                            <div class="star-rating">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="far fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                            <span class="ms-2">(3)</span>
+                          </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                          <span class="fw-bold">Free</span>
+                          <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                      <div class="card shadow-lg card-custom">
+                        <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-04.jpg" class="card-img-top" alt="Course Image">
+                        <div class="card-body">
+                          <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                            <div class="icon-circle me-2">
+                              <i class="fas fa-bolt text-success"></i>
+                            </div>
+                            Web Design
+                          </button>
+                          <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                          <div class="d-flex align-items-center mb-2">
+                            <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                          </div>
+                          <div class="d-flex align-items-center mb-3">
+                            <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                            <div class="ms-2">
+                              <h6 class="mb-0">Mohuiddin Sumon</h6>
+                              <small class="text-success">WordPress Developer</small>
+                            </div>
+                          </div>
+                          <div class="d-flex align-items-center mb-3">
+                            <div class="star-rating">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="far fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                            <span class="ms-2">(3)</span>
+                          </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                          <span class="fw-bold">Free</span>
+                          <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                      <div class="card shadow-lg card-custom">
+                        <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-09.jpg" class="card-img-top" alt="Course Image">
+                        <div class="card-body">
+                          <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                            <div class="icon-circle me-2">
+                              <i class="fas fa-bolt text-success"></i>
+                            </div>
+                            Web Design
+                          </button>
+                          <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                          <div class="d-flex align-items-center mb-2">
+                            <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                          </div>
+                          <div class="d-flex align-items-center mb-3">
+                            <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                            <div class="ms-2">
+                              <h6 class="mb-0">Mohuiddin Sumon</h6>
+                              <small class="text-success">WordPress Developer</small>
+                            </div>
+                          </div>
+                          <div class="d-flex align-items-center mb-3">
+                            <div class="star-rating">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="far fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                            <span class="ms-2">(3)</span>
+                          </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                          <span class="fw-bold">Free</span>
+                          <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                      <div class="card shadow-lg card-custom">
+                        <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-10.jpg" class="card-img-top" alt="Course Image">
+                        <div class="card-body">
+                          <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                            <div class="icon-circle me-2">
+                              <i class="fas fa-bolt text-success"></i>
+                            </div>
+                            Web Design
+                          </button>
+                          <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                          <div class="d-flex align-items-center mb-2">
+                            <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                          </div>
+                          <div class="d-flex align-items-center mb-3">
+                            <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                            <div class="ms-2">
+                              <h6 class="mb-0">Mohuiddin Sumon</h6>
+                              <small class="text-success">WordPress Developer</small>
+                            </div>
+                          </div>
+                          <div class="d-flex align-items-center mb-3">
+                            <div class="star-rating">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="far fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                            <span class="ms-2">(3)</span>
+                          </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                          <span class="fw-bold">Free</span>
+                          <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                      <div class="card shadow-lg card-custom">
+                        <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-11.jpg" class="card-img-top" alt="Course Image">
+                        <div class="card-body">
+                          <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                            <div class="icon-circle me-2">
+                              <i class="fas fa-bolt text-success"></i>
+                            </div>
+                            Web Design
+                          </button>
+                          <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                          <div class="d-flex align-items-center mb-2">
+                            <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                          </div>
+                          <div class="d-flex align-items-center mb-3">
+                            <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                            <div class="ms-2">
+                              <h6 class="mb-0">Mohuiddin Sumon</h6>
+                              <small class="text-success">WordPress Developer</small>
+                            </div>
+                          </div>
+                          <div class="d-flex align-items-center mb-3">
+                            <div class="star-rating">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="far fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                            <span class="ms-2">(3)</span>
+                          </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                          <span class="fw-bold">Free</span>
+                          <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+      </div>
+      <div id="menu2" class="tab-pane fade" role="tabpanel" aria-labelledby="menu2-tab">
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card shadow-lg card-custom">
+              <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-05.jpg" class="card-img-top" alt="Course Image">
+              <div class="card-body">
+                <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                  <div class="icon-circle me-2">
+                    <i class="fas fa-bolt text-success"></i>
+                  </div>
+                  Web Design
+                </button>
+                <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                  <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                  <div class="ms-2">
+                    <h6 class="mb-0">Mohuiddin Sumon</h6>
+                    <small class="text-success">WordPress Developer</small>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                  <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <span class="ms-2">(3)</span>
+                </div>
+              </div>
+              <div class="card-footer d-flex justify-content-between align-items-center">
+                <span class="fw-bold">Free</span>
+                <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+              </div>
+            </div>
+          </div>
+            <!-- Card 2 -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card shadow-lg card-custom">
+                <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-03.jpg" class="card-img-top" alt="Course Image">
+                <div class="card-body">
+                  <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                    <div class="icon-circle me-2">
+                      <i class="fas fa-bolt text-success"></i>
+                    </div>
+                    Web Design
+                  </button>
+                  <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                    <div class="ms-2">
+                      <h6 class="mb-0">Mohuiddin Sumon</h6>
+                      <small class="text-success">WordPress Developer</small>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="star-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <span class="ms-2">(3)</span>
+                  </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                  <span class="fw-bold">Free</span>
+                  <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                </div>
+              </div>
+            </div>
+              <!-- Card 3 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card shadow-lg card-custom">
+                <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-04.jpg" class="card-img-top" alt="Course Image">
+                <div class="card-body">
+                  <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                    <div class="icon-circle me-2">
+                      <i class="fas fa-bolt text-success"></i>
+                    </div>
+                    Web Design
+                  </button>
+                  <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                    <div class="ms-2">
+                      <h6 class="mb-0">Mohuiddin Sumon</h6>
+                      <small class="text-success">WordPress Developer</small>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="star-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <span class="ms-2">(3)</span>
+                  </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                  <span class="fw-bold">Free</span>
+                  <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                </div>
+              </div>
+            </div>
+              <!-- Card 4 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card shadow-lg card-custom">
+                <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-09.jpg" class="card-img-top" alt="Course Image">
+                <div class="card-body">
+                  <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                    <div class="icon-circle me-2">
+                      <i class="fas fa-bolt text-success"></i>
+                    </div>
+                    Web Design
+                  </button>
+                  <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                    <div class="ms-2">
+                      <h6 class="mb-0">Mohuiddin Sumon</h6>
+                      <small class="text-success">WordPress Developer</small>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="star-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <span class="ms-2">(3)</span>
+                  </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                  <span class="fw-bold">Free</span>
+                  <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                </div>
+              </div>
+            </div>
+              <!-- Card 5 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card shadow-lg card-custom">
+                <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-03.jpg" class="card-img-top" alt="Course Image">
+                <div class="card-body">
+                  <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                    <div class="icon-circle me-2">
+                      <i class="fas fa-bolt text-success"></i>
+                    </div>
+                    Web Design
+                  </button>
+                  <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                    <div class="ms-2">
+                      <h6 class="mb-0">Mohuiddin Sumon</h6>
+                      <small class="text-success">WordPress Developer</small>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="star-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <span class="ms-2">(3)</span>
+                  </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                  <span class="fw-bold">Free</span>
+                  <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                </div>
+              </div>
+            </div>
+              <!-- Card 6 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card shadow-lg card-custom">
+                <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-10.jpg" class="card-img-top" alt="Course Image">
+                <div class="card-body">
+                  <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                    <div class="icon-circle me-2">
+                      <i class="fas fa-bolt text-success"></i>
+                    </div>
+                    Web Design
+                  </button>
+                  <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                    <div class="ms-2">
+                      <h6 class="mb-0">Mohuiddin Sumon</h6>
+                      <small class="text-success">WordPress Developer</small>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="star-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <span class="ms-2">(3)</span>
+                  </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                  <span class="fw-bold">Free</span>
+                  <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                </div>
+              </div>
+            </div>
+           
+          <!-- Repeat Cards for Other Courses -->
+        </div>
+      </div>
+      <div id="menu3" class="tab-pane fade" role="tabpanel" aria-labelledby="menu3-tab">
+        <div class="row ">
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card shadow-lg card-custom">
+              <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-05.jpg" class="card-img-top" alt="Course Image">
+              <div class="card-body">
+                <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                  <div class="icon-circle me-2">
+                    <i class="fas fa-bolt text-success"></i>
+                  </div>
+                  Web Design
+                </button>
+                <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                  <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                  <div class="ms-2">
+                    <h6 class="mb-0">Mohuiddin Sumon</h6>
+                    <small class="text-success">WordPress Developer</small>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                  <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <span class="ms-2">(3)</span>
+                </div>
+              </div>
+              <div class="card-footer d-flex justify-content-between align-items-center">
+                <span class="fw-bold">Free</span>
+                <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+              </div>
+            </div>
+          </div>
+            <!-- Card 2-->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card shadow-lg card-custom">
+                <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-03.jpg" class="card-img-top" alt="Course Image">
+                <div class="card-body">
+                  <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                    <div class="icon-circle me-2">
+                      <i class="fas fa-bolt text-success"></i>
+                    </div>
+                    Web Design
+                  </button>
+                  <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                    <div class="ms-2">
+                      <h6 class="mb-0">Mohuiddin Sumon</h6>
+                      <small class="text-success">WordPress Developer</small>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="star-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <span class="ms-2">(3)</span>
+                  </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                  <span class="fw-bold">Free</span>
+                  <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                </div>
+              </div>
+            </div>
+              <!-- Card 3 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card shadow-lg card-custom">
+                <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-03.jpg" class="card-img-top" alt="Course Image">
+                <div class="card-body">
+                  <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                    <div class="icon-circle me-2">
+                      <i class="fas fa-bolt text-success"></i>
+                    </div>
+                    Web Design
+                  </button>
+                  <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                    <div class="ms-2">
+                      <h6 class="mb-0">Mohuiddin Sumon</h6>
+                      <small class="text-success">WordPress Developer</small>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="star-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <span class="ms-2">(3)</span>
+                  </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                  <span class="fw-bold">Free</span>
+                  <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                </div>
+              </div>
+            </div>
+              <!-- Card 4 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card shadow-lg card-custom">
+                <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-04.jpg" class="card-img-top" alt="Course Image">
+                <div class="card-body">
+                  <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                    <div class="icon-circle me-2">
+                      <i class="fas fa-bolt text-success"></i>
+                    </div>
+                    Web Design
+                  </button>
+                  <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                    <div class="ms-2">
+                      <h6 class="mb-0">Mohuiddin Sumon</h6>
+                      <small class="text-success">WordPress Developer</small>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="star-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <span class="ms-2">(3)</span>
+                  </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                  <span class="fw-bold">Free</span>
+                  <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                </div>
+              </div>
+            </div>
+              <!-- Card 5 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card shadow-lg card-custom">
+                <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-09.jpg" class="card-img-top" alt="Course Image">
+                <div class="card-body">
+                  <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                    <div class="icon-circle me-2">
+                      <i class="fas fa-bolt text-success"></i>
+                    </div>
+                    Web Design
+                  </button>
+                  <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                    <div class="ms-2">
+                      <h6 class="mb-0">Mohuiddin Sumon</h6>
+                      <small class="text-success">WordPress Developer</small>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="star-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <span class="ms-2">(3)</span>
+                  </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                  <span class="fw-bold">Free</span>
+                  <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                </div>
+              </div>
+            </div>
+              <!-- Card 6 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card shadow-lg card-custom">
+                <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-10.jpg" class="card-img-top" alt="Course Image">
+                <div class="card-body">
+                  <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                    <div class="icon-circle me-2">
+                      <i class="fas fa-bolt text-success"></i>
+                    </div>
+                    Web Design
+                  </button>
+                  <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                    <div class="ms-2">
+                      <h6 class="mb-0">Mohuiddin Sumon</h6>
+                      <small class="text-success">WordPress Developer</small>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="star-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <span class="ms-2">(3)</span>
+                  </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                  <span class="fw-bold">Free</span>
+                  <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                </div>
+              </div>
+            </div>
+            
+          <!-- Repeat Cards for Other Courses -->
+        </div>
+
+      </div>
+      <div id="menu4" class="tab-pane fade" role="tabpanel" aria-labelledby="menu4-tab">
+          <div class="row">
+   <!-- Card 1 -->
+                    <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="card shadow-lg card-custom">
+                          <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-05.jpg" class="card-img-top" alt="Course Image">
+                          <div class="card-body">
+                            <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                              <div class="icon-circle me-2">
+                                <i class="fas fa-bolt text-success"></i>
+                              </div>
+                              Web Design
+                            </button>
+                            <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                            <div class="d-flex align-items-center mb-2">
+                              <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                              <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                              <div class="ms-2">
+                                <h6 class="mb-0">Mohuiddin Sumon</h6>
+                                <small class="text-success">WordPress Developer</small>
+                              </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                              <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                              </div>
+                              <span class="ms-2">(3)</span>
+                            </div>
+                          </div>
+                          <div class="card-footer d-flex justify-content-between align-items-center">
+                            <span class="fw-bold">Free</span>
+                            <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                          </div>
+                        </div>
+                      </div>
+                        <!-- Card 2-->
+                        <div class="col-12 col-md-6 col-lg-4 ">
+                          <div class="card shadow-lg card-custom">
+                            <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-03.jpg" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                              <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                                <div class="icon-circle me-2">
+                                  <i class="fas fa-bolt text-success"></i>
+                                </div>
+                                Web Design
+                              </button>
+                              <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                              <div class="d-flex align-items-center mb-2">
+                                <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                              </div>
+                              <div class="d-flex align-items-center mb-3">
+                                <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                                <div class="ms-2">
+                                  <h6 class="mb-0">Mohuiddin Sumon</h6>
+                                  <small class="text-success">WordPress Developer</small>
+                                </div>
+                              </div>
+                              <div class="d-flex align-items-center mb-3">
+                                <div class="star-rating">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                </div>
+                                <span class="ms-2">(3)</span>
+                              </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                              <span class="fw-bold">Free</span>
+                              <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <div class="col-12 col-md-6 col-lg-4 ">
+                          <div class="card shadow-lg card-custom">
+                            <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-03.jpg" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                              <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                                <div class="icon-circle me-2">
+                                  <i class="fas fa-bolt text-success"></i>
+                                </div>
+                                Web Design
+                              </button>
+                              <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                              <div class="d-flex align-items-center mb-2">
+                                <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                              </div>
+                              <div class="d-flex align-items-center mb-3">
+                                <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                                <div class="ms-2">
+                                  <h6 class="mb-0">Mohuiddin Sumon</h6>
+                                  <small class="text-success">WordPress Developer</small>
+                                </div>
+                              </div>
+                              <div class="d-flex align-items-center mb-3">
+                                <div class="star-rating">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                </div>
+                                <span class="ms-2">(3)</span>
+                              </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                              <span class="fw-bold">Free</span>
+                              <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                          <div class="card shadow-lg card-custom">
+                            <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-04.jpg" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                              <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                                <div class="icon-circle me-2">
+                                  <i class="fas fa-bolt text-success"></i>
+                                </div>
+                                Web Design
+                              </button>
+                              <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                              <div class="d-flex align-items-center mb-2">
+                                <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                              </div>
+                              <div class="d-flex align-items-center mb-3">
+                                <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                                <div class="ms-2">
+                                  <h6 class="mb-0">Mohuiddin Sumon</h6>
+                                  <small class="text-success">WordPress Developer</small>
+                                </div>
+                              </div>
+                              <div class="d-flex align-items-center mb-3">
+                                <div class="star-rating">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                </div>
+                                <span class="ms-2">(3)</span>
+                              </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                              <span class="fw-bold">Free</span>
+                              <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                          <div class="card shadow-lg card-custom">
+                            <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-09.jpg" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                              <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                                <div class="icon-circle me-2">
+                                  <i class="fas fa-bolt text-success"></i>
+                                </div>
+                                Web Design
+                              </button>
+                              <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                              <div class="d-flex align-items-center mb-2">
+                                <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                              </div>
+                              <div class="d-flex align-items-center mb-3">
+                                <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                                <div class="ms-2">
+                                  <h6 class="mb-0">Mohuiddin Sumon</h6>
+                                  <small class="text-success">WordPress Developer</small>
+                                </div>
+                              </div>
+                              <div class="d-flex align-items-center mb-3">
+                                <div class="star-rating">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                </div>
+                                <span class="ms-2">(3)</span>
+                              </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                              <span class="fw-bold">Free</span>
+                              <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                          <div class="card shadow-lg card-custom">
+                            <img src="./assets/images/curosesbackground/cadrdssec/card1sec/course-10.jpg" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                              <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-3 mb-3">
+                                <div class="icon-circle me-2">
+                                  <i class="fas fa-bolt text-success"></i>
+                                </div>
+                                Web Design
+                              </button>
+                              <h5 class="card-title">Build Responsive Real-World Websites with HTML</h5>
+                              <div class="d-flex align-items-center mb-2">
+                                <i class="fa-regular fa-folder me-2"></i><span>8 Lessons</span>
+                              </div>
+                              <div class="d-flex align-items-center mb-3">
+                                <img src="./assets/images/curosesbackground/cadrdssec/card1sec/team-9.jpg" class="rounded-circle border" width="40" height="40" alt="Instructor">
+                                <div class="ms-2">
+                                  <h6 class="mb-0">Mohuiddin Sumon</h6>
+                                  <small class="text-success">WordPress Developer</small>
+                                </div>
+                              </div>
+                              <div class="d-flex align-items-center mb-3">
+                                <div class="star-rating">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                </div>
+                                <span class="ms-2">(3)</span>
+                              </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                              <span class="fw-bold">Free</span>
+                              <button class="btn btn-outline-light rounded-pill px-3 py-1">View Details</button>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+      </div>
+  </div>
+   </div>
+  
+</section><!-- End Explore Featured Courses -->
+<section><!--  Start section Our Course Categories  -->
+  <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+          <!-- زر "Our Features" مع العنوان تحته -->
+          <div class="d-flex flex-column align-items-start">
+              <button class="btn btn-light border d-inline-flex align-items-center justify-content-center rounded-pill px-3">
+                  <div class="icon-circle d-flex align-items-center justify-content-center rounded-circle me-2" 
+                       style="width: 30px; height: 30px; background-color: rgb(218,242,240);">
+                      <i class="fas fa-bolt text-success"></i>
+                  </div>
+                  Our Features
+              </button>
+              <h1 class="mt-2" style="color: black; font-size: 1.8rem; font-weight: bold;">
+                  Our Course Categories
+              </h1>
+          </div>
+
+          <!-- الأزرار الدائرية على اليمين -->
+          <div class="d-flex gap-3">
+            <button class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center btn-circle"
+                    style="width: 45px; height: 45px;">
+                <i class="fas fa-arrow-left"></i>
+                
+            </button>
+        
+            <button class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center btn-circle"
+                    style="width: 45px; height: 45px;">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+        
+      </div>
+  </div>
+  <section id="main-section">
+    <div id="swiper-container">
+      <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="4"
+        centered-slides="true" space-between="30" grab-cursor="true">
+
+        <swiper-slide onclick="toggleCourseCount(this)">
+          <img src="./assets/images/courses-f/course-feature-1.png" alt="Image 1">
+          <div class="info-box">
+            <h3>Web Development</h3>
+            <p class="course-count">عدد كورس: 5</p>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide onclick="toggleCourseCount(this)">
+          <img src="./assets/images/courses-f/course-feature-2.png" alt="Image 2">
+          <div class="info-box">
+            <h3>Design Fundamentals</h3>
+            <p class="course-count">عدد كورس: 3</p>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide onclick="toggleCourseCount(this)">
+          <img src="./assets/images/courses-f/course-feature-3.png" alt="Image 3">
+          <div class="info-box">
+            <h3>Data Science</h3>
+            <p class="course-count">عدد كورس: 7</p>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide onclick="toggleCourseCount(this)">
+          <img src="./assets/images/courses-f/course-feature-4.png" alt="Image 4">
+          <div class="info-box">
+            <h3>Machine Learning</h3>
+            <p class="course-count">عدد كورس: 4</p>
+          </div>
+        </swiper-slide>
+
+      </swiper-container>
+    </div>
+  </section>
+</section><!--  End section Our Course Categories  -->
+
+<!--  Start  section First 50 Student’s & Mentors1 -->
+
+ <section class="img-bj1 position-relative ">
+  <div class="container1 ">
+  <div class="d-flex flex-column align-items-start gap-2">
+ 
+   
+  <!-- العنوان -->
+  <h1>50% Offer For Very First 50 Student’s & Mentors</h1>
+  <p>
+    The ability to learn at my own pace was a game-changer for me. The flexible schedule allowed me to balance my studies with work and personal life, making it possible to complete the course without feeling overwhelmed.
+  </p>
+  </div>  
+    <!-- أزرار في الأسفل -->
+    <div class="buttons-container1">
+      <a href="#" class="btn student-btn">Become A Student <i class="fas fa-arrow-right"></i></a>
+      <a href="#" class="btn teacher-btn">Become A Teacher <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="">
+      
+      <div> <img src="./assets/images/newfloder/dot-shape (1).png" alt="dotshape  " class="dotshape"/></div>
+      <div> <img src="./assets/images/newfloder/cta-shape-2.png" alt="circe24 " class="circe24"/></div> 
+    </div>
+  </div>
+</section>
+
+<!--  End   section First 50 Student’s & Mentors1 -->
+  <!--  start Meet Our Expert Instructor-->
+  <section class="container">
+    <div class="d-flex flex-column align-items-center">
+      <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-4 mb-3 g-2">
+        <div class="icon-circle d-flex align-items-center justify-content-center rounded-circle me-2" 
+             style="width: 35px; height: 35px; background-color: rgb(218,242,240);">
+          <i class="fas fa-bolt text-success"></i>
+        </div>
+        Our Instructors
+      </button>
+      
+      <!-- Header Title (الآن يظهر بشكل طبيعي) -->
+      <div class="headr-h1 mb-5">
+        <h1 style="color: black;">Meet Our Expert Instructor</h1>
+
+      </div>
+      <div class="card-group">
+        <div class="card">
+          <img src="./assets/images/fe12/team-9.png" class="card-img-top1" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+       
+    </div>
+    </div>
+  </section>
+  
+    <!--  End  Meet Our Expert Instructor-->
+  
+    <!-- start subject-->
+    <section class="img-bj1 container position-relative ">
+      <div class="container ">
+        <div class=" ">
+          <div><img src="./assets/images/supensor/sponsor-1.png" alt="starts" class="starts"/></div>
+          <div><img src="./assets/images/supensor/sponsor-2.png" alt="stasts&line" class=" stasts_line"/></div>
+        </div>
+      <div class="d-flex justify-content-center gap-2">
+        <div><img src="./assets/images/supensor/sponsor-2 (1).png " alt="clibet" class="clibet5"/></div>
+        <div><img src="./assets/images/supensor/sponsor-3.png" alt="propes " class="clibet5"/></div>
+        <div><img src="./assets/images/supensor/sponsor-4.png" alt="subject" class="clibet5"/></div>
+       <div><img src="./assets/images/supensor/sponsor-1 (1).png " alt="education" class="clibet5"/></div>
+     
+       
+     
+      </div>
+    </section>
+    <!-- end  subject-->
+   <!-- Start Latest News Updates -->
+      <section class="Latest_News_Updates">
+        <div class="d-flex flex-column align-items-center">
+          <button class="btn btn-light border d-flex align-items-center justify-content-center rounded-pill px-4 mb-3 g-2 mt-4">
+            <div class="icon-circle d-flex align-items-center justify-content-center rounded-circle me-2" 
+                style="width: 35px; height: 35px; background-color: rgb(218,242,240);">
+              <i class="fas fa-bolt text-success"></i>
+            </div>
+            Our Instructors
+          </button>
+
+          <!-- Header Title -->
+          <div class="headr-h1 mb-5">
+            <h1 style="color: black;">Meet Our Expert Instructor</h1>
+          </div>
+
+          <!-- Cards Container with Container Class (Reduced Gap) -->
+          <div class="container">
+            <div class="row justify-content-center g-2 flex-wrap"> <!-- g-2 for reduced gap between cards and flex-wrap for better arrangement -->
+            
+              <!-- Card 1 -->
+              <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card shadow-lg card-custom">
+                  <img src="./assets/images/student24/student1.jpg" class="card-img-top" alt="studentone">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-center gap-1">
+                      <i class="fa-regular fa-clock text-success"></i>
+                      <span style="color: black; font-size: 8px;">December12,2024</span>
+                      <i class="fa-solid fa-folder text-warning"></i>
+                      <span style="color: black; font-size: 10px;">Science</span>
+                    </div>
+                    <p class="mt-2 text-muted hover-effect" style="font-size: 7px;">Student Achievement Best Practice for Schools and Families</p>
+                    <hr style="border: 1px dashed #ccc; margin: 8px 0;">
+                    <a href="#" class="d-flex align-items-center" style="color: green; font-weight: bold; text-decoration: none;">Read More <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card shadow-lg card-custom">
+                  <img src="./assets/images/student24/student2 .jpg" class="card-img-top" alt="student2">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-center gap-1">
+                      <i class="fa-regular fa-clock text-success"></i>
+                      <span style="color: black; font-size: 8px;">December12,2024</span>
+                      <i class="fa-solid fa-folder text-warning"></i>
+                      <span style="color: black; font-size: 10px;">Arts</span>
+                    </div>
+                    <p class="mt-2 text-muted hover-effect" style="font-size: 7px;">Student Achievement Best Practice for Schools and Families</p>
+                    <hr style="border: 1px dashed #ccc; margin: 8px 0;">
+                    <a href="#" class="d-flex align-items-center" style="color: green; font-weight: bold; text-decoration: none;">Read More <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card shadow-lg card-custom">
+                  <img src="./assets/images/student24/student3.jpg" class="card-img-top" alt="student3">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-center gap-1">
+                      <i class="fa-regular fa-clock text-success"></i>
+                      <span style="color: black; font-size: 8px;">December12,2024</span>
+                      <i class="fa-solid fa-folder text-warning"></i>
+                      <span style="color: black; font-size: 10px;">Schools</span>
+                    </div>
+                    <p class="mt-2 text-muted hover-effect" style="font-size: 7px;">Student Achievement Best Practice for Schools and Families</p>
+                    <hr style="border: 1px dashed #ccc; margin: 8px 0;">
+                    <a href="#" class="d-flex align-items-center" style="color: green; font-weight: bold; text-decoration: none;">Read More <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                  </div>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- End Latest News Updates -->
+ <!-- Become Student-->
+ <section class="container mt-5 become-student ">
+  <div class="row align-items-center g-0">
+    <div class="col-lg-6" >
+      <div class="content " style="flex-basis: 50%;">
+        <h1>Become Student</h1>
+        <p>Get The Best Courses & Upgrade Your Skills</p>
+        
+      
+        <div class="buttons-container1">
+          <a href="#" class="btn student-btn">Become A Student <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 d-flex align-items-center justify-content-center gap-0">
+      <img src="./assets/images/popular/popular-shape-1.png" alt="Shape">
+      <img src="./assets/images/popular/popular-men-1.png" alt="Student" >
+    </div>
+
+  </div>
+</section>
+
+
+
+<!--Become Student-->
+
+
+
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script type="text/javascript"> 
+    window.addEventListener("scroll",function(){
+        var nav =document.querySelector("nav");
+        nav.classList.toggle("sticky",window.scrollY>0);
+    }
+)
+</script>
+<script src="./assets/js/main.js"></script>
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script>
+    function toggleCourseCount(element) {
+      let courseCount = element.querySelector(".course-count");
+      courseCount.classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
